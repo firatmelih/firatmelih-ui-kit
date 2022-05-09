@@ -1,0 +1,57 @@
+@import '/src/styles/global';
+.a-text{
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: $white;
+  &.-bold{
+    font-weight: bold;
+  }
+  &.-large{
+    font-size: 1.8rem;
+  }
+  &.-medium{
+    font-size: 1.6rem;
+  }
+  &.-small{
+    font-size: 1rem;
+  }
+  &.-title-1{
+    font-size: 3.6rem;
+    font-weight: bold;
+    line-height: 6rem;
+  }
+  &.-title-2{
+    font-size: 2.8rem;
+    font-weight: bold;
+    line-height: 3rem;
+  }
+  &.-title-3{
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2rem;
+  }
+  &.-title-4{
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2rem;
+  }
+  &.-red{
+    color: $primary-red;
+  }
+  &.-blue{
+    color: $primary-blue;
+  }
+  &.-orange{
+    color: $primary-orange;
+  }
+  &.-yellow{
+    color: $primary-yellow;
+  }
+  &.-black{
+    color: $black;
+  }
+  &.-white{
+    color: $white;
+  }
+}

@@ -1,0 +1,78 @@
+@import "/src/styles/global";
+.a-input{
+  font-size: 1rem;
+  line-height: 1.4375em;
+  letter-spacing: 0.00938em;
+  color: rgba(0, 0, 0, 0.87);
+  position: relative;
+  cursor: text;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  box-sizing: border-box;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  backdrop-filter: blur(5px);
+  input{
+    &.-blur{
+      backdrop-filter: blur(5px);
+      background-color: transparent !important;
+    }
+    border-radius: 4px;
+    outline: none;
+    font: inherit;
+    letter-spacing: inherit;
+    color: currentColor;
+    border: 0;
+    box-sizing: content-box;
+    height: 1.4em;
+    margin: 0;
+    display: block;
+    min-width: 0;
+    width: 100%;
+    padding: 16.5px 14px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    &.-blur{
+      color: $white;
+    }
+    &.-primary{
+      color: $white;
+      background-color: $primary-default;
+    }
+    &.-secondary{
+      color: $black;
+      background-color: $primary-blue;
+    }
+    &.-danger{
+      background-color: $primary-red;
+    }
+    &.-warning{
+      background-color: $primary-yellow;
+    }
+    &.-orange{
+      background-color: $primary-orange;
+    }
+  }
+
+  &__toggle{
+    position: absolute;
+    right: 0;
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    font-size: 1rem;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    color: white;
+    padding: 16.5px 14px;
+    transition: .3s;
+    box-shadow:  -5px 0 0 0px $primary-gray !important;;
+    &:hover{
+      background-color: rgba(0, 0, 0, 0.57);
+    }
+    &:active{
+      color: $primary-default;
+    }
+  }
+}

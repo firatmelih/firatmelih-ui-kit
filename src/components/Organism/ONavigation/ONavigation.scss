@@ -1,0 +1,35 @@
+@import "/src/styles/global";
+.o-navigation{
+  display: flex;
+  background: $primary-yellow-hover;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  .logo{
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  .m-search{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    svg{
+      transition: .3s;
+      right: 10px;
+      position: absolute;
+      color: white;
+      box-shadow:  -5px 0 0 0px $primary-gray !important;;
+      height: 55px;
+      &:hover{
+        background-color: rgba(0, 0, 0, 0.57);
+        border-radius: 0 4px 4px 0;
+      }
+      &:active{
+        color: $primary-default;
+      }
+    }
+  }
+}

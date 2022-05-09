@@ -1,0 +1,39 @@
+@import "/src/styles/global";
+.a-select{
+  border-radius: 4px;
+  outline: none;
+  font: inherit;
+  letter-spacing: inherit;
+  color: currentColor;
+  border: 0;
+  box-sizing: content-box;
+  height: 1.4em;
+  margin: 0;
+  display: block;
+  min-width: 0;
+  box-sizing: border-box !important;
+  width: 225px;
+  height: 55px;
+  display: flex;
+  padding: 16.5px 14px;
+  &.-primary{
+    background: $primary-default;
+    color: $white;
+  }
+  &.-secondary{
+    background: $primary-blue;
+    color: $black;
+  }
+  &.-warning{
+    background: $primary-yellow;
+    color: $black;
+  }
+  &.-danger{
+    background: $primary-red;
+    color: $black;
+  }
+  &.-orange{
+    background: $primary-orange;
+    color: $black;
+  }
+}
