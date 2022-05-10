@@ -1,0 +1,22 @@
+@import "src/styles/global";
+.m-search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  svg{
+    transition: .3s;
+    right: 0px;
+    position: absolute;
+    color: $black;
+    box-shadow:  -5px 0 0 0px $primary-gray !important;;
+    height: 56px;
+    &:hover{
+      background-color: rgba(0, 0, 0, 0.57);
+      border-radius: 0 4px 4px 0;
+    }
+    &:active{
+      color: $primary-default-hover;
+    }
+  }
+}

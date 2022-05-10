@@ -1,4 +1,23 @@
 @import "./src/styles/global";
 .p-home{
   background: transparent;
+  display: flex;
+  flex-direction: column;
+  z-index: 27;
+  background: rgb(0,23,64);
+  background: linear-gradient(180deg, rgba(0,23,64,1) 62%, rgba(175,141,106,1) 100%);
+
+ .go-back-btn{
+   position: fixed;
+   background-color: white !important;
+   border: 1px white solid;
+   right: 15px;
+   z-index: 24123412;
+   bottom: 15px;
+   @media screen and (max-device-width: 750px) {
+     transform: scale(3);
+     right: 100px;
+     bottom: 100px;
+   }
+ }
 }

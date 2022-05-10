@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from "react-router-dom";
-import Router from './routes'
+import PHome from './components/Page/PHome'
+import ONavigation from "./components/Organism/ONavigation/ONavigation";
 const root = ReactDOM.createRoot(document.getElementById('app'));
 root.render(
   <React.StrictMode>
-      <BrowserRouter>
-          <Router />
-      </BrowserRouter>
+          <ONavigation/>
+          <PHome />
   </React.StrictMode>
 )

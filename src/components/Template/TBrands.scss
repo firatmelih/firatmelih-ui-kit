@@ -1,0 +1,26 @@
+.t-brands{
+  overflow: hidden;
+  display: flex;
+  height: 250px;
+  width: 100%;
+  margin: 0;
+  background-color: black;
+  z-index: 28;
+  align-items: center;
+  border-bottom:white 5px solid;
+  justify-content: center;
+  img{
+    margin-right: 512px;
+    width: 128px;
+    text-align: center;
+    animation: slide 45s linear infinite;
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translate3d(1500%, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1500%, 0, 0); /* The image width */
+  }
+}

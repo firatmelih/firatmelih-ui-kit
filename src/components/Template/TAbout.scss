@@ -1,0 +1,29 @@
+.t-about{
+  background-color: white;
+  display: flex;
+  z-index: 27;
+  height: 100vh;
+  &__block{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0 160px 25px 160px;
+    flex-direction: column;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    text-align: center;
+    @media screen and (max-width: 1000px) {
+      justify-content: center;
+      margin:0 30px;
+    }
+  }
+  &__who-am-i{
+    svg{
+      height: 150px;
+      @media screen and (max-device-width: 700px) {
+        height: 300px;
+
+      }
+    }
+  }
+}

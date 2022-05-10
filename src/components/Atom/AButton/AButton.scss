@@ -27,6 +27,7 @@
   &.-default{
     background: $primary-default;
     background-position: center;
+    color: $black;
     &:hover {
       background: darken($primary-default-hover, 5%) radial-gradient(circle, transparent 1%, darken($primary-default-hover, 5%) 1%) center/15000%;
     }
@@ -40,6 +41,7 @@
 
   &.-success{
     background: $primary-blue;
+    color: $black;
     background-position: center;
     &:hover {
       background: darken($primary-blue-hover, 5%) radial-gradient(circle, transparent 1%, darken($primary-blue-hover, 5%) 1%) center/15000%;
@@ -89,10 +91,10 @@
   &.-outlined-danger{
     color: $primary-red;
     border: 1px solid $primary-red;
-    background-color: $white;
+    background-color: $black;
     background-position: center;
     &:hover {
-      background: darken(white, 5%) radial-gradient(circle, transparent 1%, darken(white, 5%) 1%) center/15000%;
+      background: darken($black, 5%) radial-gradient(circle, transparent 1%, $black(white, 5%) 1%) center/15000%;
     }
     &:active {
       background-color: darken($primary-red, 10%);
@@ -104,10 +106,10 @@
   &.-outlined-warning{
     color: $primary-yellow;
     border: 1px solid $primary-yellow;
-    background-color: $white;
+    background-color: $black;
     background-position: center;
     &:hover {
-      background: darken(white, 5%) radial-gradient(circle, transparent 1%, darken(white, 5%) 1%) center/15000%;
+      background: darken($black, 5%) radial-gradient(circle, transparent 1%, darken($black, 5%) 1%) center/15000%;
     }
     &:active {
       background-color: darken($primary-yellow, 10%);
@@ -116,12 +118,12 @@
     }
   }
   &.-outlined-success{
-    background-color: $white;
+    background-color: $black;
     border: $primary-blue 1px solid;
     background-position: center;
     color: $primary-blue;
     &:hover {
-      background: darken(white, 5%) radial-gradient(circle, transparent 1%, darken(white, 5%) 1%) center/15000%;
+      background: darken($black, 5%) radial-gradient(circle, transparent 1%, darken($black, 5%) 1%) center/15000%;
     }
     &:active {
       background-color: darken($primary-blue, 10%);
@@ -134,7 +136,7 @@
   &.-outlined-default{
     color: $primary-default;
     border: 1px solid $primary-default;
-    background-color: $white;
+    background-color: $black;
     background-position: center;
     &:hover {
       background: darken(white, 5%) radial-gradient(circle, transparent 1%, darken(white, 5%) 1%) center/15000%;
@@ -144,6 +146,24 @@
       background-size: 100%;
       transition: background 0s;
     }
+  }
+
+  &.-transparent{
+    background-position: center;
+    background-color: darken( rgba(0, 0, 0, 0.2), 5%) !important;
+
+    &:hover {
+      background: darken( rgba(0, 0, 0, 0.12), 5%) radial-gradient(circle, transparent 1%, darken( rgba(0, 0, 0, 0.12), 5%) 1%) center/15000%;
+    }
+    &:active {
+      background-color: darken( rgba(0, 0, 0, 0.2), 5%);
+      background-size: 100%;
+      transition: background 0s;
+    }
+  }
+
+  &.-circle{
+   border-radius: 100% !important;
   }
 }
 

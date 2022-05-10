@@ -1,9 +1,14 @@
 import './AText.scss'
+
 function AText({children, level, bold, color}){
-    let className = 'a-text'
-    className += ` -${level}`
-    bold? className+=' -bold':className+=''
-    color? className+=` -${color}`:className+=''
+    let className = [
+        'a-text',
+        bold && '-bold',
+        color && `-${color}`,
+        level && `-${level}`
+    ]
+    className = className.filter(style=>style)
+    className = className.join(' ')
     if(level==='title-1'){
         return(
             <h1 className={className}>{children}</h1>

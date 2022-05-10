@@ -7,8 +7,8 @@ $primary-red-hover: #fa7b65;
 $primary-orange: #fd6638;
 $primary-orange-hover: #fda88d;
 
-$primary-default: #a56bfc;
-$primary-default-hover: #b58bfa;
+$primary-default: #ffffff;
+$primary-default-hover: #7b7783;
 
 $primary-yellow: #fdd638;
 $primary-yellow-hover: #fcdc60;
@@ -23,24 +23,16 @@ body {
   font-family: 'Inter', sans-serif;
   padding: 0;
   margin: 0;
+
 }
 html, body {
+  scroll-behavior: smooth;
   width: 100%;
   height:100%;
 }
-body {
-  background: linear-gradient(-90deg, #491057, #1e1e1e, #252525, #491057);
-  background-size: 400% 400%;
-  animation: gradient 13s ease  infinite;
+
+a{
+  text-decoration: none;
+  color: inherit;
 }
-@keyframes gradient {
-  0% {
-    background-position: 25% 50%;
-  }
-  50% {
-    background-position: 50% 50%;
-  }
-  100% {
-    background-position: 50% 25%;
-  }
-}
+
