@@ -12,7 +12,7 @@ function TAbout({myRef}) {
                    <span style={{fontWeight:'bold'}}>
                         I will help you create your personal website
                    </span>
-                        . Work with engineers, in order to get safe and high performance and quality.
+                        . Work with engineers, in order to achieve safety, high performance and quality.
                     </AText>
                 </div>
                 <AText color={'black'} level={'large'}>
